@@ -34,7 +34,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/search-text", {
+      const response = await fetch("https://smart-medicine-api.onrender.com/search-text", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function App() {
       console.error("Text search error:", error);
       setMessages((prev) => [
         ...prev,
-        { sender: "bot", type: "text", text: "❌ Failed to connect to server. Please verify the Flask API is running on port 5000." }
+        { sender: "bot", type: "text", text: "❌ Failed to connect to server. Please verify the API backend is online." }
       ]);
     } finally {
       setLoading(false);
@@ -94,7 +94,7 @@ function App() {
     formData.append("image", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/upload-image", {
+      const response = await fetch("https://smart-medicine-api.onrender.com/upload-image", {
         method: "POST",
         body: formData,
       });
