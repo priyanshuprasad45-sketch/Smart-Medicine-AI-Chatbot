@@ -1,8 +1,11 @@
-# Use lightweight Python base image
-FROM python:3.10-slim
+# Use stable Python base image (Debian-based)
+FROM python:3.10
 
 # Install system dependencies (Tesseract OCR and OpenGL libraries for OpenCV)
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# Uses a retry loop to be resilient against transient network/mirror failures on cloud build platforms like Render.
+RUN apt-get clean && \
+    (apt-get update --fix-missing || (sleep 5 && apt-get update --fix-missing) || (sleep 10 && apt-get update --fix-missing)) && \
+    apt-get install -y --no-install-recommends \
     tesseract-ocr \
     libgl1-mesa-glx \
     libglib2.0-0 \
