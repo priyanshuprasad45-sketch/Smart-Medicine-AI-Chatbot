@@ -1,10 +1,10 @@
-# Use stable Python base image (Debian-based)
-FROM python:3.10
+# Use stable Python 3.10 Bookworm base image (Debian 12 - resolves Debian 11 mirror obsolescence errors)
+FROM python:3.10-bookworm
 
 # Install system dependencies (Tesseract OCR and OpenGL libraries for OpenCV)
-# Uses a retry loop to be resilient against transient network/mirror failures on cloud build platforms like Render.
+# Combined apt-get clean, update, and install in a single RUN instruction to prevent caching errors.
 RUN apt-get clean && \
-    (apt-get update --fix-missing || (sleep 5 && apt-get update --fix-missing) || (sleep 10 && apt-get update --fix-missing)) && \
+    apt-get update --allow-releaseinfo-change -y && \
     apt-get install -y --no-install-recommends \
     tesseract-ocr \
     libgl1-mesa-glx \
