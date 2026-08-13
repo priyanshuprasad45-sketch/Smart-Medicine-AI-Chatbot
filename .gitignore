@@ -1,0 +1,42 @@
+# Virtual environments
+venv/
+backend/venv/
+.venv/
+env/
+ENV/
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Production builds
+frontend/build/
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
