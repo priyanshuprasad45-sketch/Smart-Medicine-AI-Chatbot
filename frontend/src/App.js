@@ -240,7 +240,17 @@ function App() {
             <div className="profile-avatar">P</div>
             <div className="profile-info">
               <span className="profile-name">Priyanshu</span>
-              <span className="profile-role">priyanshuprasad45@gmail.com</span>
+              <a 
+                href="https://github.com/priyanshuprasad45-sketch" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="profile-role"
+                style={{ textDecoration: "none", color: "var(--text-muted)", transition: "color 0.2s ease" }}
+                onMouseEnter={(e) => e.target.style.color = "var(--accent-blue)"}
+                onMouseLeave={(e) => e.target.style.color = "var(--text-muted)"}
+              >
+                github.com/priyanshuprasad45-sketch
+              </a>
             </div>
           </div>
         </div>
