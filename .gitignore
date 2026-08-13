@@ -40,3 +40,6 @@ Thumbs.db
 *.njsproj
 *.sln
 *.swp
+
+# Local Interview Guide (ignored from GitHub)
+interview_guide.md
