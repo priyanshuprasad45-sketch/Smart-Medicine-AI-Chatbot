@@ -1,5 +1,7 @@
 # Smart Medicine AI - Medical Small Language Model (SLM) & OCR System
 
+🔗 **Live Project Link:** [smart-medicine-ai-chatbot.vercel.app](https://smart-medicine-ai-chatbot.vercel.app/)
+
 Welcome to the **Smart Medicine AI** project. This repository contains a lightweight, full-stack application designed to search for and retrieve drug information (Uses, Side Effects, Dosage, and Precautions) using either direct text queries or by scanning medicine package labels via Optical Character Recognition (OCR).
 
 This document serves as both the project **README** and a **detailed blueprint/template** from which you can generate your final academic or professional project report.
