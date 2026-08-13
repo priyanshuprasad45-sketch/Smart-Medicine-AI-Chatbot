@@ -1,6 +1,6 @@
 # Smart Medicine AI - Medical Small Language Model (SLM) & OCR System
 
-🔗 **Live Project Link:** [smart-medicine-ai-chatbot.vercel.app](https://smart-medicine-ai-chatbot.vercel.app/)
+**Live Project Link:** [smart-medicine-ai-chatbot.vercel.app](https://smart-medicine-ai-chatbot.vercel.app/)
 
 Welcome to the **Smart Medicine AI** project. This repository contains a lightweight, full-stack application designed to search for and retrieve drug information (Uses, Side Effects, Dosage, and Precautions) using either direct text queries or by scanning medicine package labels via Optical Character Recognition (OCR).
 
@@ -8,20 +8,20 @@ This document serves as both the project **README** and a **detailed blueprint/t
 
 ---
 
-## 📋 Table of Contents
-1. [Project Overview](#-project-overview)
-2. [System Architecture](#-system-architecture)
-3. [Key Features](#-key-features)
-4. [Technology Stack](#-technology-stack)
-5. [Database Structure](#-database-structure)
-6. [Core Code Implementation & Walkthrough](#-core-code-implementation--walkthrough)
-7. [Installation & Setup Guide](#-installation--setup-guide)
-8. [Proposed Enhancements & Future Scope](#-proposed-enhancements--future-scope)
-9. [Project Report Blueprint (Structure & Writing Guide)](#-project-report-blueprint-structure--writing-guide)
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [System Architecture](#system-architecture)
+3. [Key Features](#key-features)
+4. [Technology Stack](#technology-stack)
+5. [Database Structure](#database-structure)
+6. [Core Code Implementation and Walkthrough](#core-code-implementation-and-walkthrough)
+7. [Installation and Setup Guide](#installation-and-setup-guide)
+8. [Proposed Enhancements and Future Scope](#proposed-enhancements-and-future-scope)
+9. [Project Report Blueprint (Structure and Writing Guide)](#project-report-blueprint-structure-and-writing-guide)
 
 ---
 
-## 🌟 Project Overview
+## Project Overview
 
 When purchasing medicines, consumers often struggle to quickly find reliable information regarding drug usages, side effects, precautions, and appropriate dosages. Searching the web can lead to conflicting information. Furthermore, reading fine print on medicine packaging is difficult.
 
@@ -32,7 +32,7 @@ When purchasing medicines, consumers often struggle to quickly find reliable inf
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The project is structured as a decoupled client-server architecture:
 
@@ -70,7 +70,7 @@ graph TD
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Double Input Modality**: Supports both manual typing and camera uploads.
 - **Robust OCR**: Uses Tesseract OCR to digitize textual information from complex medicine pack shots.
@@ -79,7 +79,7 @@ graph TD
 
 ---
 
-## 💻 Technology Stack
+## Technology Stack
 
 ### Frontend
 - **React.js (v19)**: Main web UI framework.
@@ -97,7 +97,7 @@ graph TD
 
 ---
 
-## 📊 Database Structure
+## Database Structure
 
 The project currently uses a flat-file database schema stored in `backend/data/medicines.csv`. The schema contains the following fields:
 
@@ -119,7 +119,7 @@ amoxicillin,Bacterial infections,Rash,500mg,Complete full course
 
 ---
 
-## 🔍 Core Code Implementation & Walkthrough
+## Core Code Implementation and Walkthrough
 
 Here are the key implementation blocks that drive the system:
 
@@ -165,7 +165,7 @@ An asynchronous React component that manages chat lists, handles file selection,
 
 ---
 
-## ⚙️ Installation & Setup Guide
+## Installation and Setup Guide
 
 ### Prerequisites
 1. **Python 3.10+** installed.
@@ -216,7 +216,7 @@ npm start
 
 ---
 
-## 🚀 Proposed Enhancements & Future Scope
+## Proposed Enhancements and Future Scope
 
 To extend this prototype into a full-scale medical tool, the following enhancements are suggested:
 1. **Large Scale Database Integration**: Connect to open-source medical databases (e.g., RxNorm, OpenFDA APIs) to support millions of drugs instead of a local CSV.
@@ -226,7 +226,7 @@ To extend this prototype into a full-scale medical tool, the following enhanceme
 
 ---
 
-## 📄 Project Report Blueprint (Structure & Writing Guide)
+## Project Report Blueprint (Structure and Writing Guide)
 
 *Use this outline to expand this README into your formal project report submission.*
 
