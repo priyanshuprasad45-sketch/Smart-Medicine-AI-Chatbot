@@ -1,8 +1,7 @@
-# Use stable Python 3.10 Bookworm base image (Debian 12 - resolves Debian 11 mirror obsolescence errors)
-FROM python:3.10-bookworm
+# Use stable Python 3.12 Bookworm base image (Debian 12 - satisfies requirements for numpy >= 2.4.0)
+FROM python:3.12-bookworm
 
 # Install system dependencies (Tesseract OCR and OpenGL libraries for OpenCV)
-# Combined apt-get clean, update, and install in a single RUN instruction to prevent caching errors.
 RUN apt-get clean && \
     apt-get update --allow-releaseinfo-change -y && \
     apt-get install -y --no-install-recommends \
